@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>duvan Suesca </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- Librería AOS para animaciones profesionales al hacer scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">DS</a>
+    <div class="navlinks">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#portadas">Portadas</a>
+      <a href="#destacados">Destacados</a>
+      <a href="#habilidades">Habilidades</a>
+       <a href="#codigo">Código</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+    🌙
+</button>
+
+<header class="hero wrap" data-aos="fade-up">
+  <div class="eyebrow">Producción multimedia</div>
+  <h1>Hola, soy <strong>Duvan Suesca</strong>.<br>Diseño piezas que comunican.</h1>
+  <p>Productor Multimedia, con experiencia en diseño editorial, Montaje de sets en fotografía, edición de video e impresión 3D.</p>
+  <div class="cta">
+    <a href="#portafolio" class="btn btn-primary">Ver portafolio</a>
+    <a href="#contacto" class="btn btn-secondary">Contactarme</a>
+  </div>
+  <div class="scroll-cue">Desliza</div>
+</header>
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="wrap" data-aos="fade-up">
+  <div class="section-head">
+    <div class="eyebrow">Sobre mí</div>
+    <h2>Un poco de mi historia</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-photo">
+      <img src="imagenez/yo.jpg" alt="Foto de Duvan Suesca" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius);">
+    </div>
+    <div class="about-text">
+      <p><strong>Soy Productor Multimedia</strong>. He participado en la creación de manuales, cartillas y piezas publicitarias. Me apasiona desarrollar soluciones visuales funcionales.</p>
+      <p>Me interesa especialmente el diseño editorial y la producción de contenido visual — desde manuales y cartillas hasta piezas publicitarias y montajes fotográficos. Disfruto encontrar la forma más clara de comunicar una idea.</p>
+      <p>El crecimiento no tiene límites.</p>
+      <div class="about-facts">
+        <div class="fact"><div class="num">Diseño y Edición</div><div class="label">Áreas de especialización</div></div>
+        <div class="fact"><div class="num">Productor Multimedia</div><div class="label">Título</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTAFOLIO -->
+<section id="portafolio" class="wrap" data-aos="fade-up">
+  <div class="section-head">
+    <div class="eyebrow">Portafolio</div>
+    <h2>Proyectos y trabajos realizados</h2>
+  </div>
+ 
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="editorial">Diseño Editorial</button>
+    <button class="filter-btn" data-filter="foto">Diseño Representativo</button>
+    <button class="filter-btn" data-filter="video">Edición de video</button>
+    
+  </div>
+
+  <div class="grid" id="grid">
+
+    <!-- Tarjeta 1 (PDF) -->
+    <div class="card" 
+         data-cat="editorial" 
+         data-tag="Diseño Editorial" 
+         data-title="Proyecto Editorial 1" 
+         data-desc="Descripción detallada del primer proyecto de diseño editorial enfocado en revistas." 
+         data-pdf="pdfs/proyecto1.pdf">
+        <div class="card-image" style="background-image: url('miniatura/1.png');"></div>
+        <div class="card-overlay">
+            <span class="card-badge">Ver Proyecto (PDF)</span>
+            <div class="card-text">
+                <span class="card-tag">Editorial</span>
+                <span class="card-title">Proyecto Editorial 1</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 (PDF) -->
+    <div class="card" 
+         data-cat="editorial" 
+         data-tag="Diseño Editorial" 
+         data-title="Proyecto Editorial 2" 
+         data-desc="Catálogo corporativo diseñado con enfoque minimalista y tipografía moderna." 
+         data-pdf="pdfs/proyecto2.pdf">
+        <div class="card-image" style="background-image: url('miniatura/2.png');"></div>
+        <div class="card-overlay">
+            <span class="card-badge">Ver Proyecto (PDF)</span>
+            <div class="card-text">
+                <span class="card-tag">Editorial</span>
+                <span class="card-title">Proyecto Editorial 2</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 (PDF) -->
+    <div class="card" 
+         data-cat="editorial" 
+         data-tag="Diseño Editorial" 
+         data-title="Proyecto Editorial 3" 
+         data-desc="Libro de marca y manual de identidad visual corporativa." 
+         data-pdf="pdfs/proyecto3.pdf"> 
+        <div class="card-image" style="background-image: url('miniatura/3.png');"></div>
+        <div class="card-overlay">
+            <span class="card-badge">Ver Proyecto (PDF)</span>
+            <div class="card-text">
+                <span class="card-tag">Editorial</span>
+                <span class="card-title">Proyecto Editorial 3</span>
+            </div>
+        </div>
+    </div>
+
+        <!-- Tarjeta 5 (Video) -->
+    <div class="card" 
+         data-cat="video" 
+         data-tag="Producción Audiovisual" 
+         data-title="Antes y Después" 
+         data-desc="Video comparativo del proceso de edición, mostrando el antes y el después." 
+         data-video="videos/antesdespues.mp4">
+        <div class="card-image" style="background-image: url('miniatura/8.png');"></div>
+        <div class="card-overlay">
+            <span class="card-badge">Ver Proyecto (Video)</span>
+            <div class="card-text">
+                <span class="card-tag">Video</span>
+                <span class="card-title">Antes y Después</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 6 (Video) -->
+    <div class="card" 
+         data-cat="video" 
+         data-tag="Producción Audiovisual" 
+         data-title="Video Promocional" 
+         data-desc="Pieza audiovisual promocional producida para difusión de marca." 
+         data-video="videos/promocion.mp4">
+        <div class="card-image" style="background-image: url('miniatura/7.png');"></div>
+        <div class="card-overlay">
+            <span class="card-badge">Ver Proyecto (Video)</span>
+            <div class="card-text">
+                <span class="card-tag">Video</span>
+                <span class="card-title">Video Promocional</span>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+  <!-- SECCIÓN DE PORTADAS (ESTILO APPLE ANCHO COMPLETO) -->
+<section id="portadas" class="apple-full-section" data-aos="fade-up"></section>
+  <div class="apple-section-header">
+    <span class="apple-eyebrow">Galería Creativa</span>
+    <h2>Portadas para Música</h2>
+  </div>
+  
+  <div class="apple-container-grid">
+    <!-- Portada 1: Molly -->
+    <div class="apple-box apple-light">
+      <div class="apple-box-text">
+        <span class="apple-tag">Arte Digital</span>
+        <h3>Molly</h3>
+        <p>Exploración conceptual y diseño visual detallado.</p>
+      </div>
+      <div class="apple-box-img">
+        <img src="portadas/molly.png" alt="Portada Molly">
+      </div>
+    </div>
+
+    <!-- Portada 2: Noche -->
+    <div class="apple-box apple-dark">
+      <div class="apple-box-text">
+        <span class="apple-tag">Ilustración / Concepto</span>
+        <h3>Tonight</h3>
+        <p>Atmósferas oscuras y composición visual profunda.</p>
+      </div>
+      <div class="apple-box-img">
+        <img src="portadas/noche.png" alt="Portada Noche">
+      </div>
+    </div>
+
+    <!-- Portada 3: Verdades -->
+    <div class="apple-box apple-dark">
+      <div class="apple-box-text">
+        <span class="apple-tag">Editorial / Gráfico</span>
+        <h3>Verdades</h3>
+        <p>Estética moderna, minimalista y directa al espectador.
+        </p>
+      </div>
+      <div class="apple-box-img">
+        <img src="portadas/verdades.png" alt="Portada Verdades">
+      </div>
+    </div>
+
+    <!-- Portada 4: Want -->
+    <div class="apple-box apple-light">
+      <div class="apple-box-text">
+        <span class="apple-tag">Producción Multimedia</span>
+        <h3>Want U</h3>
+        <p>Diseño enfocado en la fuerza del mensaje y la tipografía.</p>
+      </div>
+      <div class="apple-box-img">
+        <img src="portadas/want.png" alt="Portada Want">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- CARRUSEL DESTACADOS -->
+<section id="destacados" class="carousel-section" data-aos="fade-up">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Destacados</div>
+      <h2>Un vistazo rápido a mi trabajo</h2>
+      <div class="eyebrow">Trabajo creado para plantillas de presentaciones</div>
+    </div>
+  </div>
+  
+  <div class="carousel" id="carousel">
+    <div class="carousel-track" id="carousel-track">
+      <div class="carousel-slide" data-tag="Diseño Editorial" style="background-image:url('imagenez/cafe.png');">
+        <div class="carousel-info">
+          <span class="carousel-tag">Diseño Editorial</span>
+          <h3>[Título del proyecto destacado 1]</h3>
+          <p>[Agrega una descripción corta]</p>
+        </div>
+      </div>
+      <div class="carousel-slide" data-tag="Fotografía" style="background-image:url('imagenez/perros.png');">
+        <div class="carousel-info">
+          <span class="carousel-tag">Fotografía</span>
+          <h3>[Título del proyecto destacado 2]</h3>
+          <p>[Agrega una descripción corta]</p>
+        </div>
+      </div>
+      <div class="carousel-slide" data-tag="Producción Audiovisual" style="background-image:url('imagenez/carro.png');">
+        <div class="carousel-info">
+          <span class="carousel-tag">Producción Audiovisual</span>
+          <h3>[Título del proyecto destacado 3]</h3>
+          <p>[Agrega una descripción corta]</p>
+        </div>
+      </div>
+      <div class="carousel-slide" data-tag="Impresión 3D" style="background-image:url('imagenez/negocios.png');">
+        <div class="carousel-info">
+          <span class="carousel-tag">Impresión 3D</span>
+          <h3>[Título del proyecto destacado 4]</h3>
+          <p>[Agrega una descripción corta]</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-arrow prev" id="carousel-prev" aria-label="Anterior">‹</button>
+    <button class="carousel-arrow next" id="carousel-next" aria-label="Siguiente">›</button>
+    <div class="carousel-dots" id="carousel-dots"></div>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades" class="wrap" data-aos="fade-up">
+  <div class="section-head">
+    <div class="eyebrow">Programas y Habilidades </div>
+    <h2>Con qué trabajo</h2>
+  </div>
+  <div class="skills-row">
+    <span class="skill-pill">Adobe Photoshop</span>
+    <span class="skill-pill">Adobe Illustrator</span>
+    <span class="skill-pill">Diseño editorial</span>
+    <span class="skill-pill">Montaje fotográfico</span>
+    <span class="skill-pill">Preparación de archivos 3D</span>
+    <span class="skill-pill">Edición de video</span>
+    <span class="skill-pill">Canva</span>
+    <span class="skill-pill">Davinci Resolve</span>
+    <span class="skill-pill">CapCut</span>
+  </div>
+</section>
+
+
+
+<!-- CÓDIGO -->
+<section id="codigo" class="wrap" data-aos="fade-up">
+  <div class="section-head">
+    <div class="eyebrow">Desarrollo Web "PROXIMAMENTE"</div>
+    <h2>Código</h2>
+  </div>
+
+  <div class="presentacion-box">
+    <p class="presentacion-texto">
+      Diseño y desarrollo páginas web completas integrando inteligencia artificial 
+      como parte de mi flujo de trabajo técnico, lo que me permite optimizar tiempos 
+      de entrega sin comprometer la calidad del producto final. Mi enfoque combina 
+      criterio de diseño, comprensión de la estructura del código y uso estratégico 
+      de herramientas de IA para resolver, personalizar y ajustar cada proyecto 
+      según las necesidades del cliente.
+    </p>
+  </div>
+
+  <h3 class="titulo-proyectos">Proyectos</h3>
+
+  <div class="proyectos-grid">
+    <a href="proyecto1.html" class="proyecto-card">Página web 1</a>
+    <a href="proyecto2.html" class="proyecto-card">Página web 2</a>
+  </div>
+
+  <div class="tech-grid">
+    <div class="tech-badge">HTML</div>
+    <div class="tech-badge">CSS</div>
+    <div class="tech-badge">JavaScript</div>
+  </div>
+
+ <div class="proceso-box">
+  <h3 class="proceso-titulo">Nuestro proceso</h3>
+  <div class="proceso-lista">
+
+    <div class="proceso-item">
+      <span class="proceso-num">01</span>
+      <div>
+        <h4>Descubrimos</h4>
+        <p>Conocemos tu idea, objetivos y necesidades para definir qué debe lograr tu sitio web.</p>
+      </div>
+    </div>
+
+    <div class="proceso-item">
+      <span class="proceso-num">02</span>
+      <div>
+        <h4>Diseñamos</h4>
+        <p>Creamos la estructura y propuesta visual, cuidando la identidad de tu marca y la experiencia del usuario.</p>
+      </div>
+    </div>
+
+    <div class="proceso-item">
+      <span class="proceso-num">03</span>
+      <div>
+        <h4>Desarrollamos</h4>
+        <p>Convertimos el diseño en un sitio web funcional, moderno y adaptable a diferentes dispositivos.</p>
+      </div>
+    </div>
+
+    <div class="proceso-item">
+      <span class="proceso-num">04</span>
+      <div>
+        <h4>Optimizamos</h4>
+        <p>Probamos el funcionamiento, corregimos detalles y optimizamos la experiencia del usuario.</p>
+      </div>
+    </div>
+
+    <div class="proceso-item">
+      <span class="proceso-num">05</span>
+      <div>
+        <h4>Entregamos</h4>
+        <p>Entregamos el proyecto listo para representar tu marca y conectar con tus clientes.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="wrap" data-aos="fade-up">
+  <div class="contact-section">
+    <div class="section-head">
+      <div class="eyebrow">Contacto</div>
+      <h2>Hablemos de tu próximo proyecto</h2>
+    </div>
+    <p>Estoy disponible para nuevas oportunidades. Escríbeme y con gusto conversamos.</p>
+    <div class="contact-links">
+      <a href="mailto:lesmesduvan0@gmail.com">lesmesduvan0@gmail.com</a>
+      <a href="tel:+573027690950">+57 302 769 0950</a>
+      <a href="#" target="_blank" rel="noopener">[LinkedIn]</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Duvan Suesca. Todos los derechos reservados.</footer>
+
+<!-- MODAL / VISOR DE PROYECTOS -->
+<div class="modal" id="project-modal">
+  <button class="modal-close" id="modal-close" aria-label="Cerrar">×</button>
+  <div class="modal-content">
+    <div class="modal-body-container" id="modal-image"></div>
+    <div class="modal-info">
+      <span class="modal-tag" id="modal-tag"></span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts necesarios -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+    easing: 'ease-out-cubic'
+  });
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
